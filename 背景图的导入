@@ -3,9 +3,9 @@
 void main()
 {
 	initgraph(350, 600);
-	IMAGE img_bk; //¶¨ÒåIMAGE¶ÔÏó
-	loadimage(&img_bk, _T("F:\\backgroundfd.jpg")); //¶ÁÈ¡Í¼Æ¬µ½img¶ÔÏóÖĞ
+	IMAGE img_bk; //å®šä¹‰IMAGEå¯¹è±¡
+	loadimage(&img_bk, _T("F:\\backgroundfd.jpg")); //è¯»å–å›¾ç‰‡åˆ°imgå¯¹è±¡ä¸­
 	putimage(0, 0, &img_bk);
 	_getch();
-	closegraph();
+	å…³é—­å›¾ï¼ˆï¼‰ï¼›//ç»“æŸ
 }
