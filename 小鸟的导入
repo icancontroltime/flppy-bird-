@@ -1,0 +1,18 @@
+#include<graphics.h>
+#include<conio.h>
+void main()
+{
+	initgraph(350, 600);
+	IMAGE img_bk;
+	loadimage(&img_bk, _T("F:\\backgroundfd.jpg"));
+	putimage(0, 0, &img_bk);
+
+	IMAGE img_bd, img_bd2;
+	loadimage(&img_bd, _T("F:\\bird1.jpg"));
+	loadimage(&img_bd2, _T("F:\\bird2.jpg"));
+	putimage(100, 200, &img_bd,NOTSRCERASE);
+	putimage(100, 200, &img_bd2,SRCINVERT);
+
+	_getch();
+	closegraph();
+}
